@@ -104,7 +104,7 @@ Check out the [deployment documentation](https://vitejs.dev/guide/static-deploy.
 ### Modules/Plugins
 
 - [Pinegrow Vite Plugin](https://www.npmjs.com/package/@pinegrow/vite-plugin) - enables you to live-design your Vue single-file components visually in Vue Designer.
-- [Pinegrow Primevue Plugin](https://www.npmjs.com/package/@pinegrow/primevue-plugin) - via Design Panel, enables theme customization (optional) and visual controls for Primevue utilities. Note: This is an addon that's licensed separately to Pinegrow apps (like Vue Designer).
+- [Pinegrow PrimeVue Plugin](https://www.npmjs.com/package/@pinegrow/primevue-plugin) - via Design Panel, enables theme customization (optional) and visual controls for Primevue utilities. Note: This is an addon that's licensed separately to Pinegrow apps (like Vue Designer).
 - [unplugin-vue-router](https://github.com/posva/unplugin-vue-router) - Next-gen file based routing with type support for Vue Router.
 - [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - Router based layout for Vue applications using Vite.
 - 📲 [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - On-demand components auto importing for Vue.
