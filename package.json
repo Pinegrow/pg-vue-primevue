@@ -1,15 +1,16 @@
 {
-  "name": "pg-vue",
+  "name": "pg-vue-primevue",
   "version": "0.0.0",
-  "homepage": "https://pg-vue-css.netlify.app",
+  "homepage": "https://pg-vue-primevue.netlify.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pinegrow/pg-vue.git"
+    "url": "https://github.com/pinegrow/pg-vue-primevue.git"
   },
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "now": "npm run build && npm run preview",
-    "lighthouse": "npx unlighthouse --no-cache --site https://pg-vue-css.netlify.app",
+    "lighthouse": "npx unlighthouse --no-cache --site https://pg-vue-primevue.netlify.app",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -20,10 +21,12 @@
     "format": "prettier --write \"**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css,md,mdx,json}\" !public --ignore-path .gitignore"
   },
   "dependencies": {
+    "@primevue/themes": "^4.2.1",
     "@vueuse/core": "^10.1.2",
     "@vueuse/head": "^1.1.26",
     "ofetch": "^1.3.3",
     "pinia": "^2.0.35",
+    "primevue": "^4.2.1",
     "vee-validate": "^4.11.6",
     "vue": "^3.3.0",
     "vue-router": "^4.1.6"
@@ -31,6 +34,7 @@
   "devDependencies": {
     "@iconify/json": "^2.2.64",
     "@pinegrow/vite-plugin": "^3.0.60",
+    "@primevue/auto-import-resolver": "^4.2.1",
     "@rushstack/eslint-patch": "^1.2.0",
     "@tsconfig/node18": "^2.0.0",
     "@types/node": "^20.5.0",

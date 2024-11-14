@@ -2,14 +2,14 @@
   import { useHead, useSeoMeta } from 'unhead'
   import { useRoute } from 'vue-router/auto'
 
-  // import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
-  // import type { Script } from '@unhead/schema'
+  import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
+  import type { Script } from '@unhead/schema'
 
   import site from '@/site'
   import image from '@/screenshots/image.jpg'
-  // import { pg_font_urls } from '~~/themes/pg-tailwindcss/tokens.mjs'
+  import { pg_font_urls } from '~~/themes/pg-primevue/tokens.mjs'
 
-  // type TurboScript = Script & { once: true }
+  type TurboScript = Script & { once: true }
 
   const link: any = [
     {
@@ -20,25 +20,25 @@
   ]
   const noscript: any = []
 
-  // if (pg_font_urls.length) {
-  //   const googleapis = 'https://fonts.googleapis.com'
-  //   const gstatic = 'https://fonts.gstatic.com'
-  //   link.push(
-  //     { rel: 'dns-prefetch', href: googleapis },
-  //     { rel: 'dns-prefetch', href: gstatic },
-  //     { rel: 'preconnect', crossorigin: 'anonymous', href: googleapis },
-  //     { rel: 'preconnect', crossorigin: 'anonymous', href: gstatic },
-  //     {
-  //       rel: 'preload',
-  //       as: 'style',
-  //       onload: "this.onload=null;this.rel='stylesheet'",
-  //       href: pg_font_urls.toString(),
-  //     },
-  //   )
-  //   noscript.push(
-  //     `<link rel="stylesheet" crossorigin="anonymous" href="${pg_font_urls.toString()}" />`,
-  //   )
-  // }
+  if (pg_font_urls.length) {
+    const googleapis = 'https://fonts.googleapis.com'
+    const gstatic = 'https://fonts.gstatic.com'
+    link.push(
+      { rel: 'dns-prefetch', href: googleapis },
+      { rel: 'dns-prefetch', href: gstatic },
+      { rel: 'preconnect', crossorigin: 'anonymous', href: googleapis },
+      { rel: 'preconnect', crossorigin: 'anonymous', href: gstatic },
+      {
+        rel: 'preload',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
+        href: pg_font_urls.toString(),
+      },
+    )
+    noscript.push(
+      `<link rel="stylesheet" crossorigin="anonymous" href="${pg_font_urls.toString()}" />`,
+    )
+  }
 
   const { title, description, url, author } = site
   const route = useRoute()
@@ -90,7 +90,7 @@
       { name: 'author', content: author },
       { name: 'keywords', content: route.meta.tags?.toString() },
     ],
-    // script: [{innerHTML: checkDarkTheme, once: true} as TurboScript],
+    script: [{ innerHTML: checkDarkTheme, once: true } as TurboScript],
     link,
     noscript,
   })

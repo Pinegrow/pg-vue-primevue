@@ -5,6 +5,8 @@
     "src/**/*",
     "src/**/*.vue",
     "src/*",
+    "themes/**/*",
+    "primevue.config.ts",
     "components.d.ts",
     "auto-imports.d.ts",
     "typed-router.d.ts",
@@ -20,7 +22,7 @@
       "~~/*": ["*"]
     },
     "moduleResolution": "node",
-    "types": ["vite-plugin-vue-layouts/client"],
+    "types": ["vite-plugin-vue-layouts/client", "primevue"],
     "allowJs": true,
     "strict": false
   }
