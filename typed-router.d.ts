@@ -45,12 +45,6 @@ declare module 'vue-router/auto/routes' {
       Record<never, never>,
       Record<never, never>
     >
-    about: RouteRecordInfo<
-      'about',
-      '/about',
-      Record<never, never>,
-      Record<never, never>
-    >
   }
 }
 
