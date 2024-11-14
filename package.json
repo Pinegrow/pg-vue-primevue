@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.64",
+    "@pinegrow/primevue-plugin": "^3.0.2-beta.0",
     "@pinegrow/vite-plugin": "^3.0.60",
     "@primevue/auto-import-resolver": "^4.2.1",
     "@rushstack/eslint-patch": "^1.2.0",
