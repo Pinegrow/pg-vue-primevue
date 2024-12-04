@@ -21,7 +21,7 @@
       "~/*": ["src/*"],
       "~~/*": ["*"]
     },
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "types": ["vite-plugin-vue-layouts/client", "primevue"],
     "allowJs": true,
     "strict": false
