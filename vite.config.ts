@@ -13,12 +13,21 @@ import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Layouts from 'vite-plugin-vue-layouts'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
+import { unheadVueComposablesImports } from '@unhead/vue'
+
 import VueDevTools from 'vite-plugin-vue-devtools'
 
 // import { visualizer } from 'rollup-plugin-visualizer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  ssgOptions: {
+    beastiesOptions: {
+      // E.g., change the preload strategy
+      preload: 'media',
+      // Other options: https://github.com/danielroe/beasties#usage
+    },
+  },
   plugins: [
     VueRouter({
       // routesFolder: 'src/pages', // default
@@ -44,7 +53,7 @@ export default defineConfig({
         VueRouterAutoImports, // Remove 'vue-router',
         // 'vue-i18n',
         // 'vue/macros',
-        '@vueuse/head',
+        unheadVueComposablesImports,
         '@vueuse/core',
         'pinia',
       ],
