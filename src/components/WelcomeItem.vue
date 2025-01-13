@@ -1,9 +1,9 @@
 <template>
   <div class="item">
-    <i> <slot name="icon"></slot> </i>
+    <i> <slot name="icon" /> </i>
     <div class="details">
-      <h3><slot name="heading"></slot></h3>
-      <slot></slot>
+      <h3><slot name="heading" /></h3>
+      <slot />
     </div>
   </div>
 </template>

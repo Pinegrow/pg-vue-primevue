@@ -1,3 +1,5 @@
+/// <reference types="vite-ssg" />
+
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
@@ -87,8 +89,6 @@ export default defineConfig({
     liveDesigner({
       iconPreferredCase: 'unocss',
       // default value (can be removed), unocss by default uses the unocss format for icon names
-      devtoolsKey: 'devtoolsKey',
-      // see app.ts
       primevue: {
         /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
         configPath: 'primevue.config.ts', // or file where primevue is created
