@@ -9,6 +9,8 @@ export default {
   author: 'Pinegrow',
   url: 'https://pg-vue-primevue.netlify.app',
   github: 'https://github.com/pinegrow/pg-vue-primevue',
+  ogImageUrl: 'og-image.jpg', // absolute url (or) from public folder
+  generator: 'https://vuedesigner.com',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',
@@ -16,18 +18,20 @@ export default {
   twitter: '@vuedesigner',
   trailingSlash: false, // default
   titleSeparator: '|', // default
-  nav: [
-    {
-      text: 'Home',
-      link: '/',
-      type: 'primary',
-      icon: 'i-mdi-home',
-    },
-    {
-      text: 'About',
-      link: '/about',
-      type: 'primary',
-      icon: 'i-mdi-home',
-    },
-  ],
+
+  navs: {
+    primary: [
+      {
+        title: 'Home',
+        to: '/',
+        icon: 'i-mdi-home',
+      },
+      {
+        title: 'About',
+        to: '/about',
+        icon: 'i-mdi-home',
+      },
+    ],
+    secondary: [],
+  },
 }
