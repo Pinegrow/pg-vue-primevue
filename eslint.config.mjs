@@ -39,6 +39,7 @@ export default createConfigForNuxt(
       '@typescript-eslint/ban-ts-comment': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/triple-slash-reference': 'off',
     },
   })
   .override('nuxt/vue/rules', {
@@ -51,5 +52,6 @@ export default createConfigForNuxt(
     ],
     rules: {
       'vue/multi-word-component-names': 'off',
+      'vue/html-self-closing': 'off',
     },
   })
