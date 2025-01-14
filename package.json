@@ -17,7 +17,7 @@
     "type-check": "vue-tsc --noEmit",
     "lint": "npm run lint:fix && npm run format",
     "lint:fix": "eslint --fix ./",
-    "format": "prettier --write \"**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css,md,mdx,json}\" !public --ignore-path .gitignore"
+    "format": "prettier --write \"**/*.{html,vue,svelte,astro,js,jsx,cjs,mjs,ts,tsx,cts,mts,css,md,mdx,json}\" !public --ignore-path .gitignore"
   },
   "dependencies": {
     "@primevue/themes": "^4.2.5",
