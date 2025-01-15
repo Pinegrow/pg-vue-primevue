@@ -26,12 +26,13 @@ export default {
         to: '/',
         icon: 'i-mdi-home',
       },
-      {
-        title: 'About',
-        to: '/about',
-        icon: 'i-mdi-home',
-      },
     ],
-    secondary: [],
+    secondary: [
+      // {
+      //   title: 'Subscribe',
+      //   icon: 'i-mdi-home',
+      //   to: '/subscribe',
+      // },
+    ],
   },
 }
